@@ -4,7 +4,6 @@ export default DS.Model.extend({
   content: DS.attr(),
   author: DS.attr(),
   date: DS.attr(),
-  additional_notes: DS.attr(),
-  tag: DS.attr(),
-  question: DS.hasMany('answer', { async: true })
+  rank: DS.attr(),
+  question: DS.belongsTo('question', { async: true })
 });
