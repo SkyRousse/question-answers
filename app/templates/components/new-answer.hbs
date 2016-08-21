@@ -1,16 +1,12 @@
-{{#if addNewQuestion}}
-  <h3>Enter your question</h3>
-  <form class="add-new-question">
-    <div class="form-group">
-      <lable for="author">Your Name</lable>
-        {{input value=author id="author"}}
-    </div>
-    <div class="form-group">
-      <lable for="content">Your Question</lable>
-        {{input value=content id="content"}}
-    </div>
-    <button {{action 'saveQuestion'}}>Save</button>
-  </form>
-{{else}}
-  <button {{action 'questionFormShow'}}>Add Question</button>
-{{/if}}
+<h3>Enter your answer</h3>
+<form class="add-new-answer">
+  <div class="form-group">
+    <lable for="author">Your Name</lable>
+      {{input value=author id="author"}}
+  </div>
+  <div class="form-group">
+    <lable for="content">Your Answer</lable>
+      {{input value=content id="content"}}
+  </div>
+  <button {{action 'saveAnswer'}}>Save</button>
+</form>

@@ -8,6 +8,7 @@ export default Ember.Component.extend({
         author: this.get('author') ? this.get('author'): "",
         date: new Date().toLocaleDateString(),
         rank: 0,
+        question: this.get('question')
       };
       this.sendAction('saveAnswer', params);
     },

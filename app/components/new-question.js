@@ -11,7 +11,7 @@ export default Ember.Component.extend({
         content: this.get('content') ? this.get('content'): "",
         author: this.get('author') ? this.get('author'): "",
         date: new Date().toLocaleDateString(),
-        additional_notes: this.get('additional_notes') ? this.get('additional_notes'): "",
+        additionalNotes: this.get('additionalNotes') ? this.get('additionalNotes'): "",
         tag: this.get('tag') ? this.get('tag'): "",
       };
       this.set('addNewQuestion', false);
