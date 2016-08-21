@@ -1,0 +1,22 @@
+<div class="question-body">
+  <div class="by-line">
+    <h6 class="author">{{question.author}}</h6>
+    <h6 class="timestamp">{{question.date}}</h6>
+  </div>
+  <div class="body-copy">
+    {{question.content}}
+  </div>
+  <div class="additional-notes">
+    <h5>Notes</h5>
+    {{question.additional_notes}}
+  </div>
+</div>
+
+
+
+<h3>Posted Answers:</h3>
+<ul>
+  {{#each question.answers as |answer|}}
+    <li><h4>{{answer.name}} says</h4> <p>{{answer.answer}}</p></li>
+  {{/each}}
+</ul>

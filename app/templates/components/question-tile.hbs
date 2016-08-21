@@ -1,3 +1,5 @@
-<li>
-  {{question.content}} {{question.author}}  {{question.date}}  
-</li>
+{{#link-to 'question' question.id}}
+  <li>
+    {{question.content}} {{question.author}}  {{question.date}}
+  </li>
+{{/link-to}}
