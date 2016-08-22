@@ -1,7 +1,11 @@
-<ul>
-  {{#each model as |question|}}
-    {{question-tile question=question}}
-  {{/each}}
-</ul>
-
-{{new-question saveQuestion="saveQuestion"}}
+<div class="top-heading">
+  <h1>A Place to learn about Ember JS</h1>
+  {{new-question saveQuestion="saveQuestion"}}
+</div>
+<div class="questions-list">
+  <ul>
+    {{#each model as |question|}}
+      {{question-tile question=question}}
+    {{/each}}
+  </ul>
+</div>

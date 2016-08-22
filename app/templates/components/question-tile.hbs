@@ -1,5 +1,5 @@
 {{#link-to 'question' question.id}}
-  <li>
-    {{question.content}} {{question.author}}  {{question.date}}
+  <li class="question-list-item">
+    {{question.content}} <span class="byline"><em>{{question.author}}</em> {{question.date}}</span>
   </li>
 {{/link-to}}
