@@ -3,19 +3,19 @@
 
 <nav role="off-canvas">
     <ul>
-        <li><a href="#">Ember</a></li>
-        <li><a href="#">Question</a></li>
-        <li><a href="#">Answer</a></li>
-        <li><a href="#">Message</a></li>
-        <li><a href="#">Board</a></li>
+        <li>{{#link-to 'index'}}Ember{{/link-to}}</li>
+        <li>{{#link-to 'index'}}Question<{{/link-to}}</li>
+        <li>{{#link-to 'index'}}Answer{{/link-to}}</li>
+        <li>{{#link-to 'index'}}Message{{/link-to}}</li>
+        <li>{{#link-to 'index'}}Board{{/link-to}}</li>
     </ul>
 </nav>
 
 <div class="main-container">
     {{outlet}}
-  <footer>
-    <p>
-      site design by Sky Rousse
-    </p>
-  </footer>
 </div>
+<footer>
+  <p>
+    site design by Sky Rousse
+  </p>
+</footer>

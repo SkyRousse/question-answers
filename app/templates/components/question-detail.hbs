@@ -1,22 +1,29 @@
-<div class="question-body">
-  <div class="by-line">
-    <h6 class="author">{{question.author}}</h6>
-    <h6 class="timestamp">{{question.date}}</h6>
+<div class="question-wrapper">
+  <div class="top-heading">
+    <h1>A Place to learn about Ember JS</h1>
+    <div class="update-question">
+      {{update-question question=question update="update"}}
+    </div>
   </div>
-  <div class="body-copy">
-    {{question.content}}
+  <div class="question-header">
+    <h3>{{question.content}}</h3>
+    <span class="byline">asked by:<em> {{question.author}}</em> on: {{question.date}}</span>
   </div>
   <div class="additional-notes">
-    <h5>Notes</h5>
+    <h4>Notes:</h4>
     {{question.additionalNotes}}
+  </div>
+  <div class="tag">
+    <h4>Tags:</h4>
+    {{question.tag}}
   </div>
 </div>
 
-
-
-<h3>Posted Answers:</h3>
-<ul>
-  {{#each question.answers as |answer|}}
-    <li><h4>{{answer.author}} says</h4> <p>{{answer.content}}</p></li>
-  {{/each}}
-</ul>
+<div class="answers-wrapper">
+    <h3>Posted Answers:</h3>
+    <ul>
+      {{#each question.answers as |answer|}}
+        <li><h4>{{answer.author}} says</h4> <p>{{answer.content}}</p></li>
+      {{/each}}
+    </ul>
+</div>
