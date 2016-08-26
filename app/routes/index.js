@@ -19,5 +19,8 @@ export default Ember.Route.extend({
       question.save();
       this.refresh();
     },
+    sendToFavorites() {
+      this.transitionTo('favorites');
+    }
   }
 });

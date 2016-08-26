@@ -5,7 +5,7 @@
 <div class="questions-list">
   <ul>
     {{#each model as |question|}}
-      {{question-tile question=question upVote="upVote"}}
+      {{question-tile question=question upVote="upVote" sendToFavorites="sendToFavorites"}}
     {{/each}}
   </ul>
 </div>

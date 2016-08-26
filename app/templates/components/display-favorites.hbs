@@ -1,0 +1,11 @@
+<div class="favorites-container">
+  <h3>Questions you've saved</h3>
+  <ul class="cart-list">
+    {{#each favorites.items as |item|}}
+    <li>
+      {{item.name}}
+      <button class="btn-remove" {{action 'removeFromFavorites' item}}>Remove</button>
+    </li>
+    {{/each}}
+  </ul>
+</div>
