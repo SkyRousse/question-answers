@@ -17,7 +17,7 @@ export default Ember.Route.extend({
       var voteScore = question.get("vote");
       question.set("vote", (voteScore -= 1));
       question.save();
-      window.location.reload(true);
+      this.refresh();
     },
   }
 });
