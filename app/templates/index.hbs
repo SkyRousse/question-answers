@@ -5,7 +5,7 @@
 <div class="questions-list">
   <ul>
     {{#each model as |question|}}
-      {{rate-question question=question upVote="upVote"}}{{question-tile question=question}}
+      {{question-tile question=question upVote="upVote"}}
     {{/each}}
   </ul>
 </div>
