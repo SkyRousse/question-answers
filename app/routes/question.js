@@ -10,10 +10,17 @@ export default Ember.Route.extend({
       Object.keys(params).forEach(function(key){
         if(params[key] !==undefined) {
           question.set(key,params[key]);
+          debugger;
         }
       });
       question.save();
       this.transitionTo('question');
+    },
+    upVote(answer) {
+      debugger;
+      var voteScore = answer.get("vote");
+      answer.set("vote", (voteScore += 1));
+      answer.save();
     },
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
