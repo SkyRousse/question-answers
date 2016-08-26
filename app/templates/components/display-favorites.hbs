@@ -1,9 +1,12 @@
+<div class="top-heading">
+  <h1>A Place to learn about Ember JS</h1>
+</div>
 <div class="favorites-container">
   <h3>Questions you've saved</h3>
   <ul class="cart-list">
     {{#each favorites.items as |item|}}
     <li>
-      {{item.name}}
+      {{item.content}}
       <button class="btn-remove" {{action 'removeFromFavorites' item}}>Remove</button>
     </li>
     {{/each}}

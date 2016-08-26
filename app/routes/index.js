@@ -13,7 +13,6 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     upVote(question) {
-      debugger;
       var voteScore = question.get("vote");
       question.set("vote", (voteScore -= 1));
       question.save();

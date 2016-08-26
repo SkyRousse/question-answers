@@ -11,7 +11,6 @@ export default Ember.Component.extend({
       this.sendAction("upVote", answer);
     },
     addToFavorites(item) {
-      debugger;
       this.get('favorites').add(item);
       this.sendAction('sendToFavorites');
     }

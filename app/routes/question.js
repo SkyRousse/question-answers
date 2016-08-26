@@ -6,18 +6,15 @@ export default Ember.Route.extend({
   },
   actions: {
     update(question, params) {
-      debugger;
       Object.keys(params).forEach(function(key){
         if(params[key] !==undefined) {
           question.set(key,params[key]);
-          debugger;
         }
       });
       question.save();
       this.transitionTo('question');
     },
     upVote(answer) {
-      debugger;
       var voteScore = answer.get("vote");
       answer.set("vote", (voteScore += 1));
       answer.save();
