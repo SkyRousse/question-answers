@@ -2,7 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('question');
+    return this.store.query('question', {
+      orderBy: 'vote'
+    });
   },
   actions: {
     saveQuestion(params) {
@@ -13,7 +15,7 @@ export default Ember.Route.extend({
     upVote(question) {
       debugger;
       var voteScore = question.get("vote");
-      question.set("vote", (voteScore += 1));
+      question.set("vote", (voteScore -= 1));
       question.save();
     },
   }
