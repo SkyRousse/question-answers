@@ -134,6 +134,14 @@ a {
       .title {
         position: absolute;
         left:97px;
+        .has-answers{
+          font-size: .7em;
+          margin-left: 25px;
+          color: #58d44a;
+          .no-answer {
+            color: red;
+          }
+        }
       }
       .byline {
         color: #696060;

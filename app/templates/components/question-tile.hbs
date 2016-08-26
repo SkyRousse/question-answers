@@ -1,4 +1,4 @@
 
   <li class="question-list-item">
-    {{rate-question question=question upVote="upVote"}} {{#link-to 'question' question.id}}<span class="title">{{question.content}}</span> <span class="byline"><em>{{question.author}}</em> {{question.date}}</span>{{/link-to}}
+    {{rate-question question=question upVote="upVote"}} {{#link-to 'question' question.id}}<span class="title">{{question.content}}<span class="has-answers">{{question-votes question}}</span></span> <span class="byline"><em>{{question.author}}</em> {{question.date}}</span>{{/link-to}}
   </li>
