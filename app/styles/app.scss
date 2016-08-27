@@ -130,6 +130,19 @@ body {
   margin: 20px;
 }
 
+.cart-list {
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.add-btn-container {
+  position: absolute;
+  right: 0px;
+  bottom: 7px;
+
+}
+
 a {
   text-decoration: none;
   color: #6f49ce;
@@ -139,7 +152,7 @@ a {
     list-style-type: none;
     padding-left: 0;
     li {
-      padding: 30px 0;
+      padding: 45px 0;
       border-bottom: 1px solid #d0cdcd;
       position: relative;
       .title {
